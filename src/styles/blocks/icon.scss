@@ -1,0 +1,31 @@
+.icon {
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  &--phone {
+    background-image: url(../images/phone.svg);
+  }
+
+  &--menu {
+    background-image: url(../images/burger_menu.svg);
+    transition: 0.3s;
+
+    &:hover {
+      background-image: url(../images/burger_menu_hover.svg);
+    }
+  }
+
+  &--cross {
+    background-image: url(../images/cross.svg);
+    grid-column: -1/-2;
+    transition: 300ms;
+
+    &:focus {
+      transform: rotate(180deg);
+    }
+  }
+}
