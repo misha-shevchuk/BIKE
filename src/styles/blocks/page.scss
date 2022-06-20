@@ -22,9 +22,9 @@
     right: 0;
     transform: translateX(100%);
     transition: 600ms;
-  
+
     &:target {
-    transform: translateX(0);
+      transform: translateX(0);
     }
   }
 }
